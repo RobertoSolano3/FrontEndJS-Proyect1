@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+<body>
+    <div class="logo-container">
+        <img src="./assets/logo-poke.png" alt="">
+        
+    </div>
+    
+    <div class="pokedex-container">
+
+        <section class="left">
+            <div class="img-container">
+                <div class="screen">
+                    <img src="./assets/pokeball.png" alt="Pokemon" id="pokeImg" width="150px">
+                </div>  
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Pokemon" id="pokeName" name="pokeName" onclick="Clear()">
+                <p id="name_validation"></p>
+            
+                <button onclick="getData()">Buscar</button>
+            </div>
+           
+        </section>
+
+        <section class="right">
+            <div class="info-container">
+                <div class="data">
+                    <label for="">Nombre:</label><span id="nombrePokemon"></span>
+                    <label for="">Tipo</label><span id="tipoPokemon"></span>
+                </div>
+                <div class="stats">
+                    <label for="">HP:</label><span id="vidaPokemon">HP:</span>
+                    <label for="">ATK:</label><span id="atkPokemon">ATK:</span>
+                    <label for="">DEF:</label><span id="defPokemon"></span>
+                    <label for="">ATK ESP:</label><span id="atkespPokemon"></span>
+                    <label for="">DEF ESP:</label><span id="defespPokemon"></span>
+                    <label for="">SPD:</label><span id="speedPokemon"></span>
+                </div>
+                <div class="moves">
+                    <label for="">MOV1:</label><span id="mov1Pokemon"></span>
+                    <label for="">MOV2:</label><span id="mov2Pokemon"></span>
+                    <label for="">MOV3:</label><span id="mov3Pokemon"></span>
+                    <label for="">MOV4:</label><span id="mov4Pokemon"></span>
+                </div> 
+            </div>
+            
+        </section>
+        
+        
+    </div>
+
+</body>
+    
+    
+<footer>
+    <script src="index.js"></script>
+</footer>
+</html>
