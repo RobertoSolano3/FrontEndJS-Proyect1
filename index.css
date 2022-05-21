@@ -1,0 +1,185 @@
+@import url(//db.onlinewebfonts.com/c/51ba22ae06790efd464bde752a2cd9d1?family=Flexo);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Flexo";
+}
+
+body {
+    /* background-color: rgb(225, 247, 247) ; */
+    background-image: url("./assets/back-poke.png");
+    
+}
+
+.logo-container {
+    position: absolute;
+    left: calc(50% - 200px);
+}
+
+.logo-container img {
+    height: 140px;
+    width: 400px;
+    animation: pulse 4s linear;
+    animation-iteration-count: infinite;
+}
+
+.pokedex-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 1300px;
+    height: 950px;
+    min-width: 500px;
+    background-image: url("./assets/pokedex.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-self: center;
+    margin: 0px 300px;  
+    position: absolute;
+    left: calc(50% - 850px);
+}
+
+.left {
+    margin-top: 420px;
+    margin-left: 2px;
+    grid-column: 2;
+}
+
+.left .img-container {
+    margin-top: 30px;
+    height: 150px;
+    width: 150px;
+}
+
+
+
+.search-container{
+    margin-top: 60px;
+    font-size: 2rem;
+}
+
+.search-container button {
+    
+        background-color: rgb(72, 72, 243); /* Green */
+        border: none;
+        color: white;
+        padding: 6px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 5px;
+
+}
+
+#name_validation {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.search-container button:hover {
+    background-color: white;
+    color: rgb(72, 72, 243);
+    border: 1px solid rgb(72, 72, 243);
+}
+
+.right{
+    grid-column: 4 / 6;
+    margin-top: 405px;
+}
+.right label {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.right span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+
+.info-container {
+    
+    display: flex;
+    gap: 90px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+}
+
+.moves {
+    display: flex;
+    flex-direction: column;
+}
+
+.pulse {
+    border: 1px red solid;
+    animation: shake 1s linear;
+}
+
+#pokeImg {
+    animation: zoom 4s linear;
+    
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.8);
+        
+    }
+
+
+    100% {
+        transform: scale(1);
+        
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.8);
+        
+    }
+
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(0.8);
+        
+    }
+}
+
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(2px, 0, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(4px, 0, 0);
+      }
+}
